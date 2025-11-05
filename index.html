@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/photoswipe@5.2.2/dist/photoswipe.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -16,6 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script type="module" src="./js/gallery.js"></script>
     <script src="./js/script.js"></script>
   </head>
   <body>
@@ -219,18 +224,118 @@
           <!-- Slider main container -->
           <div class="swiper banner-slider">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper pswp-gallery" id="my-gallery">
               <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
-              <div class="swiper-slide">Slide 10</div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 1"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 2"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 3"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 4"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 5"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 6"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 7"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 8"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 9"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80"
+                  data-pswp-width="800" data-pswp-height="600" target="_blank"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80"
+                    alt="Unsplash Slide 10"
+                  />
+                </a>
+              </div>
             </div>
 
             <!-- If we need navigation buttons -->

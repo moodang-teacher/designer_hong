@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ***************************
   const sections = gsap.utils.toArray("section");
   const sectionIds = sections.map((section) => section.id);
-  console.log(sectionIds);
+  // console.log(sectionIds);
 
   const menus = gsap.utils.toArray(".gnb li a");
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     onUpdate: (self) => {
       const direction = self.direction;
       const currentScroll = self.scroll();
-      console.log(direction, lastScroll, currentScroll); // 내리면 1, 올리면 -1 & 스크롤값
+      // console.log(direction, lastScroll, currentScroll); // 내리면 1, 올리면 -1 & 스크롤값
 
       if (currentScroll <= 100) {
         gsap.to(header, { yPercent: 0, duration: 0.3 });
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: "4.5",
     spaceBetween: 28,
     centeredSlides: true,
-    grabCursor: true,
+    // grabCursor: true,
     speed: 1000,
 
     // If we need pagination
