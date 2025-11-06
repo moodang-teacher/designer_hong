@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       autoAlpha: 0,
       rotation: -10,
     });
-    portfolioTL.from({}, { duration: 2 });
+    portfolioTL.from({}, { duration: 1 });
     portfolioTL.to(item, {
       // autoAlpha: 0.2,
       // transformOrigin: "50% 50%",
