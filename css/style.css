@@ -326,6 +326,27 @@ section {
   background: #ededed;
 }
 
+.text-slider .swiper-slide {
+  background: #fff;
+}
+
+.pic-slider-wrap {
+  border: 1px solid #f00;
+  height: 100%;
+}
+
+.pic-slider {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00f;
+}
+
+.pic-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .experience-list {
   margin-top: 40px;
 }

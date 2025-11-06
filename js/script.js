@@ -215,4 +215,45 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  // 두 슬라이더를 변수로 먼저 선언 (controller 옵션에서 상호 참조가 가능하도록)
+  let textSlider = null;
+  let picSlider = null;
+
+  textSlider = new Swiper(".text-slider", {
+    direction: "horizontal",
+    // effect: "fade",
+    loop: true,
+    autoplay: false,
+    // ⭐ 추가: 사용자의 터치(드래그/스와이프) 이동을 금지합니다.
+    allowTouchMove: false,
+    speed: 1000,
+    watchSlidesProgress: true,
+
+    // ⭐ 중요: picSlider를 제어하도록 설정
+    controller: {
+      control: picSlider,
+    },
+  });
+
+  picSlider = new Swiper(".pic-slider", {
+    direction: "horizontal",
+    loop: true,
+    autoplay: false,
+    speed: 1000,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // thumbs 제거 (controller와 thumbs 동시 사용은 혼동을 야기할 수 있음)
+    // thumbs: { swiper: textSlider, },
+
+    // ⭐ 중요: textSlider를 제어하도록 설정
+    controller: {
+      control: textSlider,
+    },
+  });
 });
