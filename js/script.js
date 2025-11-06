@@ -206,13 +206,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // If we need pagination
     pagination: {
-      el: ".swiper-pagination",
+      el: ".banner-slider-wrap .swiper-pagination",
     },
 
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".banner-slider-wrap .swiper-button-next",
+      prevEl: ".banner-slider-wrap .swiper-button-prev",
     },
   });
 
@@ -242,11 +242,11 @@ document.addEventListener("DOMContentLoaded", () => {
     autoplay: false,
     speed: 1000,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".pic-slider-wrap .swiper-pagination",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".pic-slider-wrap .swiper-button-next",
+      prevEl: ".pic-slider-wrap .swiper-button-prev",
     },
     // thumbs 제거 (controller와 thumbs 동시 사용은 혼동을 야기할 수 있음)
     // thumbs: { swiper: textSlider, },
