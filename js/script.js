@@ -108,6 +108,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // designer hong
   const designerHong = document.querySelector(".designer-hong");
+  const hongsEye = designerHong.querySelector(".eye");
+
+  // 눈 깜빡이기
+  setInterval(() => {
+    hongsEye.classList.add("blink");
+    setTimeout(() => {
+      hongsEye.classList.remove("blink");
+    }, 700);
+  }, 5000);
+
+  function shaking() {
+    designerHong.classList.add("active");
+    setTimeout(() => {
+      designerHong.classList.remove("active");
+    }, 1000);
+  }
 
   // 초기 상태 설정
   stand(); // 처음 로딩될 때 서있는 상태
@@ -125,21 +141,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function hide() {
     gsap.to(designerHong, {
-      xPercent: 150,
-      y: 240,
+      xPercent: 120,
+      y: 100,
       rotation: -15,
       duration: 1,
       ease: "elastic.out(1, 0.6)",
     });
+    shaking();
   }
   function move() {
     gsap.to(designerHong, {
-      xPercent: 140,
-      y: 100,
+      xPercent: 100,
+      y: 50,
       rotation: -30,
       duration: 1,
       ease: "elastic.out(1, 0.6)",
     });
+    shaking();
   }
 
   function stand() {
@@ -150,6 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: 1,
       ease: "elastic.out(1, 0.6)",
     });
+    shaking();
   }
 
   // 스크롤 트리거와 함께 designerHong을 움직이기

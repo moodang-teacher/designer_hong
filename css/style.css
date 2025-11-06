@@ -49,9 +49,15 @@
   --text-sm: 16px;
 }
 
+::selection {
+  background: var(--main-color-dark);
+  color: var(--point-color);
+}
+
 *,
 *::before,
 *::after {
+  cursor: url("../img/cursor.png") 2 2, auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -150,11 +156,12 @@ section {
 
 .inner {
   position: relative;
-  /* max-width: 1600px; */
+  /* width: 1600px;
+  width: 83.333%; */
   width: min(83.333%, 1600px);
   height: 80%;
   margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
 }
 
 /* home */
@@ -183,14 +190,15 @@ section {
 
 .designer-hong {
   position: fixed;
-  bottom: 0;
+  bottom: -20px;
   left: 50%;
   z-index: 100;
   /* width: 400px; */
-  width: 20.83vw;
-  aspect-ratio: 3/3.5;
-  background: pink;
-  opacity: 0.4;
+  width: 28vw;
+  /* aspect-ratio: 3/3.5; */
+  /* border: 1px solid #000; */
+
+  filter: drop-shadow(-10px -5px 0 rgba(0, 0, 0, 0.1));
 }
 
 .section-title {
@@ -248,7 +256,7 @@ section {
   width: 50px;
   height: 50px;
   border-radius: var(--border-radius-100);
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   overflow: hidden;
 }
 .skill-list li img {
@@ -317,6 +325,12 @@ section {
   justify-content: space-between;
 }
 
+@media (min-width: 2000px) {
+  .portfolio-item {
+    aspect-ratio: 1/0.5;
+  }
+}
+
 .portfolio-item-title {
   width: 440px;
 }
@@ -333,6 +347,7 @@ section {
 .pic-slider-wrap {
   border: 1px solid #f00;
   height: 100%;
+  position: relative;
 }
 
 .pic-slider {
@@ -419,6 +434,12 @@ section {
   width: fit-content;
 }
 
+@media (min-width: 2000px) {
+  .contact-content {
+    left: -150px;
+  }
+}
+
 .contact-content .section-title {
   text-align: left;
 }
@@ -443,4 +464,50 @@ html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/* Animation */
+.eye.blink {
+  transform-origin: center;
+  animation: blink 0.25s 2;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    clip-path: inset(0 0 0 0);
+  } /* 눈을 뜬 상태 */
+  50% {
+    clip-path: inset(30% 0 50% 0);
+  } /* 눈을 감은 상태 (위아래 접힘) */
+}
+
+.designer-hong.active .hair {
+  animation: wobble-hor-top 0.8s both;
+}
+.designer-hong.active .front-hair {
+  animation: wobble-hor-top 0.8s reverse both;
+}
+
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
 }
