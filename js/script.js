@@ -74,6 +74,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // ***************************
   // GSAP
   // ***************************
+  const title = SplitText.create(".home-title h1", { type: "chars" });
+  gsap.from(title.chars, {
+    delay: 1,
+    duration: 1.6,
+    y: 100,
+    autoAlpha: 0,
+    stagger: 0.05,
+    ease: "elastic.out(1, 0.6)",
+    repeat: -1,
+    yoyo: true,
+    repeatDelay: 1,
+  });
 
   const portfolioItems = gsap.utils.toArray(".portfolio-item");
 
