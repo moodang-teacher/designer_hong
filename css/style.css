@@ -265,6 +265,40 @@ section {
   text-transform: uppercase;
 }
 
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portfolio-title + h4 {
+  font-weight: 700;
+  font-size: var(--heading-4);
+}
+
+.portfolio-title + h4 + p {
+  color: var(--gray-color);
+}
+
+.portfolio-title + h4 + p + strong {
+  font-size: var(--text-sm);
+  color: var(--gray-color);
+}
+
+.view-btn {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 49px;
+  border-radius: var(--border-radius-lg);
+  background: var(--main-color);
+  margin-top: 32px;
+}
+
 .portfolio-item {
   position: absolute;
   bottom: 0;
@@ -278,6 +312,18 @@ section {
   will-change: transform;
   padding: 50px;
   color: var(--black-color);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-item-title {
+  width: 440px;
+}
+
+.portfolio-item-content {
+  width: 900px;
+  background: #ededed;
 }
 
 .experience-list {
