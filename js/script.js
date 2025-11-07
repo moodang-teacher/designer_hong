@@ -41,23 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // snap
-  ScrollTrigger.create({
-    trigger: "body",
-    start: "top top",
-    end: "max",
-    markers: true,
-    snap: {
-      duration: 0.8,
-      ease: "power4.out",
+  // ScrollTrigger.create({
+  //   trigger: "body",
+  //   start: "top top",
+  //   end: "max",
+  //   markers: true,
+  //   snap: {
+  //     duration: 0.8,
+  //     ease: "power4.out",
 
-      snapTo: (progress, self) => {
-        let snapPoints = sections.map((section) => {
-          return section.offsetTop / self.end; // return!!
-        });
-        return gsap.utils.snap(snapPoints, progress);
-      },
-    },
-  });
+  //     snapTo: (progress, self) => {
+  //       let snapPoints = sections.map((section) => {
+  //         return section.offsetTop / self.end; // return!!
+  //       });
+  //       return gsap.utils.snap(snapPoints, progress);
+  //     },
+  //   },
+  // });
 
   // ***************************
   // header 숨기기
