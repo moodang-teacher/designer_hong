@@ -18,9 +18,9 @@
   font-display: swap;
 }
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 :root {
   --main-color: #6155f5;
@@ -338,28 +338,6 @@ section {
 .portfolio-item-content {
   width: 900px;
   background: #ededed;
-}
-
-.text-slider .swiper-slide {
-  background: #fff;
-}
-
-.pic-slider-wrap {
-  border: 1px solid #f00;
-  height: 100%;
-  position: relative;
-}
-
-.pic-slider {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #00f;
-}
-
-.pic-slider .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 .experience-list {
