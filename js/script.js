@@ -115,15 +115,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 스크롤 트리거와 함께 designerHong을 움직이기
-  gsap.to(designerHong, {
-    scrollTrigger: {
-      trigger: designerHong,
-      start: "bottom 70%",
-      end: "bottom 60%",
-      // markers: true,
-      onEnter: () => move(),
-      onEnterBack: () => stand(),
-    },
+  ScrollTrigger.create({
+    trigger: "#home",
+    start: "bottom 70%",
+    end: "bottom 50%",
+    // markers: true,
+    onEnter: () => move(),
+    onEnterBack: () => stand(),
   });
 
   // contact에 도달하면 홍 원 위치
