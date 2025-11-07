@@ -511,3 +511,46 @@ html.lenis body {
     transform: translateX(-6px) rotate(1.2deg);
   }
 }
+
+#star-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* 개별 별 스타일 */
+.star {
+  /* JavaScript에서 크기가 설정되므로, 여기서는 기본 스타일만 */
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%; /* 원형 */
+  box-shadow: 0 0 4px #fff, 0 0 6px #ffffff99; /* 은은한 발광 효과 */
+
+  /* 애니메이션 적용 */
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /* 왔다 갔다 반복 */
+
+  /* JavaScript에서 설정할 CSS 변수 사용 */
+  animation-duration: var(--twinkle-duration);
+  animation-delay: var(--twinkle-delay);
+  width: var(--star-size);
+  height: var(--star-size);
+}
+
+/* 반짝임 애니메이션 정의 */
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
