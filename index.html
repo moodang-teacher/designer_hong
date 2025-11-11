@@ -18,10 +18,14 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
     <script type="module" src="./js/gallery.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/twinkle.js"></script>
   </head>
   <body>
+    <div id="star-container"></div>
     <header class="header">
       <nav>
         <ul class="gnb">
@@ -265,7 +269,7 @@
     <!-- s: portfolio -->
     <section id="portfolio" class="portfolio">
       <div class="inner">
-        <h3 class="section-title">portfolio</h3>
+        <h2 class="section-title">portfolio</h2>
         <!-- UI/UX -->
         <article class="portfolio-item">
           <div class="portfolio-item-title">
@@ -321,31 +325,116 @@
         <!-- GRAPHIC -->
         <article class="portfolio-item">
           <div class="portfolio-item-title">
-            <div class="card-inner">
-              <h3 class="portfolio-title">GRAPHIC</h3>
-              <h4>111 클론 코딩</h4>
-              <p>
-                그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에 파란
-                잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼 풀이
-                무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에 계십니다.
-              </p>
-              <strong>2DAY</strong>
-              <ul class="skill-list">
-                <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
-                <li>
-                  <img src="./img/Illustrator.svg" alt="Illustrator" />
-                </li>
-                <li><img src="./img/Figma.svg" alt="Figma" /></li>
-                <li><img src="./img/HTML.svg" alt="HTML" /></li>
-                <li><img src="./img/CSS.svg" alt="CSS" /></li>
-                <li>
-                  <img src="./img/JavaScript.svg" alt="JavaScript" />
-                </li>
-              </ul>
-              <a href="#" class="view-btn">VIEW MORE</a>
+            <div class="swiper text-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card-inner">
+                    <h3 class="portfolio-title">GRAPHIC</h3>
+                    <h4>111 클론 코딩</h4>
+                    <p>
+                      그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
+                      파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
+                      풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
+                      계십니다.
+                    </p>
+                    <strong>2DAY</strong>
+                    <ul class="skill-list">
+                      <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
+                      <li>
+                        <img src="./img/Illustrator.svg" alt="Illustrator" />
+                      </li>
+                      <li><img src="./img/Figma.svg" alt="Figma" /></li>
+                      <li><img src="./img/HTML.svg" alt="HTML" /></li>
+                      <li><img src="./img/CSS.svg" alt="CSS" /></li>
+                      <li>
+                        <img src="./img/JavaScript.svg" alt="JavaScript" />
+                      </li>
+                    </ul>
+                    <a href="#" class="view-btn">VIEW MORE</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-inner">
+                    <h3 class="portfolio-title">GRAPHIC</h3>
+                    <h4>222 클론 코딩</h4>
+                    <p>
+                      그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
+                      파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
+                      풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
+                      계십니다.
+                    </p>
+                    <strong>2DAY</strong>
+                    <ul class="skill-list">
+                      <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
+                      <li>
+                        <img src="./img/Illustrator.svg" alt="Illustrator" />
+                      </li>
+                      <li><img src="./img/Figma.svg" alt="Figma" /></li>
+                      <li>
+                        <img src="./img/JavaScript.svg" alt="JavaScript" />
+                      </li>
+                    </ul>
+                    <a href="#" class="view-btn">VIEW MORE</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-inner">
+                    <h3 class="portfolio-title">GRAPHIC</h3>
+                    <h4>333 클론 코딩</h4>
+                    <p>
+                      그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
+                      파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
+                      풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
+                      계십니다.
+                    </p>
+                    <strong>1DAY</strong>
+                    <ul class="skill-list">
+                      <li><img src="./img/Figma.svg" alt="Figma" /></li>
+                      <li><img src="./img/HTML.svg" alt="HTML" /></li>
+                      <li><img src="./img/CSS.svg" alt="CSS" /></li>
+                      <li>
+                        <img src="./img/JavaScript.svg" alt="JavaScript" />
+                      </li>
+                    </ul>
+                    <a href="#" class="view-btn">VIEW MORE</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="portfolio-item-content">GRAPHIC 관련 작업 목업</div>
+          <div class="portfolio-item-content">
+            <!-- swiper -->
+            <div class="pic-slider-wrap">
+              <div class="swiper pic-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                      alt="Unsplash Slide 1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                      alt="Unsplash Slide 2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+                      alt="Unsplash Slide 3"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </article>
       </div>
     </section>
