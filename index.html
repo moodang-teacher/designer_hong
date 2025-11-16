@@ -1,222 +1,311 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Designer Hong</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/photoswipe@5.2.2/dist/photoswipe.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
-    <script type="module" src="./js/gallery.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/twinkle.js"></script>
-  </head>
-  <body>
-    <div id="star-container"></div>
-    <header class="header">
-      <nav>
-        <ul class="gnb">
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about me!</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#banner">banner</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <hr />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designer Hong</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.2.2/dist/photoswipe.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <section id="home" class="home">
-      <div class="inner">
-        <div class="home-title">
-          <h1>Portfolio</h1>
-          <strong>디자이너</strong>
-          <h2>Hong Ji-soo</h2>
-        </div>
-        <div class="designer-hong">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg
-            version="1.1"
-            id="레이어_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 567.6 531.1"
-            style="enable-background: new 0 0 567.6 531.1"
-            xml:space="preserve"
-          >
-            <style type="text/css">
-              .st0 {
-                fill: #281406;
-                stroke: #ffffff;
-                stroke-width: 1.9832;
-                stroke-miterlimit: 10;
-              }
-              .st1 {
-                fill: #bf005f;
-              }
-              .st2 {
-                fill: none;
-                stroke: #a00058;
-                stroke-width: 3;
-                stroke-miterlimit: 10;
-              }
-              .st3 {
-                fill: #ff649c;
-              }
-              .st4 {
-                fill: #faefe9;
-              }
-              .st5 {
-                fill: #281406;
-              }
-              .st6 {
-                fill: none;
-                stroke: #3f230e;
-                stroke-width: 5;
-                stroke-linecap: round;
-                stroke-miterlimit: 10;
-              }
-              .st7 {
-                fill: none;
-                stroke: #ed7a90;
-                stroke-width: 7.0839;
-                stroke-linecap: round;
-                stroke-miterlimit: 10;
-              }
-              .st8 {
-                fill: #231f20;
-              }
-              .st9 {
-                fill: #ffffff;
-              }
-              .st10 {
-                fill: #ffded9;
-              }
-              .st11 {
-                fill: none;
-                stroke: #fcd2de;
-                stroke-width: 4;
-                stroke-miterlimit: 10;
-              }
-            </style>
-            <g>
-              <path
-                class="st0 hair"
-                d="M287.2,48.6c8.3,1.8,21.2-2.3,30-2c23.6,0.8,47.1,6.8,68,18C454,101.1,480.4,179.7,490,253
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script> -->
+  <script type="module" src="./js/gallery.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- <script src="./js/twinkle.js"></script> -->
+</head>
+
+<body>
+  <!-- <div id="star-container"></div> -->
+  <header class="header">
+    <nav>
+      <ul class="gnb">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about me!</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#banner">banner</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr />
+
+  <section id="home" class="home">
+    <div class="inner">
+      <div class="home-title">
+        <h1>Portfolio</h1>
+        <strong>디자이너</strong>
+        <h2>Hong Ji-soo</h2>
+      </div>
+      <div class="designer-hong">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 567.6 531.1" style="enable-background: new 0 0 567.6 531.1" xml:space="preserve">
+          <style type="text/css">
+            .st0 {
+              fill: #281406;
+              stroke: #ffffff;
+              stroke-width: 1.9832;
+              stroke-miterlimit: 10;
+            }
+
+            .st1 {
+              fill: #bf005f;
+            }
+
+            .st2 {
+              fill: none;
+              stroke: #a00058;
+              stroke-width: 3;
+              stroke-miterlimit: 10;
+            }
+
+            .st3 {
+              fill: #ff649c;
+            }
+
+            .st4 {
+              fill: #faefe9;
+            }
+
+            .st5 {
+              fill: #281406;
+            }
+
+            .st6 {
+              fill: none;
+              stroke: #3f230e;
+              stroke-width: 5;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+            }
+
+            .st7 {
+              fill: none;
+              stroke: #ed7a90;
+              stroke-width: 7.0839;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+            }
+
+            .st8 {
+              fill: #231f20;
+            }
+
+            .st9 {
+              fill: #ffffff;
+            }
+
+            .st10 {
+              fill: #ffded9;
+            }
+
+            .st11 {
+              fill: none;
+              stroke: #fcd2de;
+              stroke-width: 4;
+              stroke-miterlimit: 10;
+            }
+          </style>
+          <g>
+            <path class="st0 hair" d="M287.2,48.6c8.3,1.8,21.2-2.3,30-2c23.6,0.8,47.1,6.8,68,18C454,101.1,480.4,179.7,490,253
 		c3.3,25,11.3,35.5,32.3,47.9c5.5,3.3,6.6,4.8,4,11.5c-4.1,10.3-15.5,19.7-24,26.4c-13.8,10.7-29.7,18.4-46,24.3
 		c-63.2,22.9-134,23.4-200.1,20.2c-31.1-1.5-61.9-6.5-92.9-8.1c-0.1,0-112-5.7-122.5-70c-1-6,1.5-12.1,6.2-15.9
-		c12.9-10.3,39.6-29.6,45.9-105.2C100.6,91.7,182.9,25.8,287.2,48.6z"
-              />
-              <g>
-                <path
-                  class="st1"
-                  d="M413.1,531.9H177.9c-7.4,0-13-11.2-11.1-22.7C179.1,432,232,373.9,295.5,373.9c63.5,0,116.4,58.1,128.7,135.3
-			C426.1,520.7,420.5,531.9,413.1,531.9z"
-                />
-                <path
-                  class="st2"
-                  d="M253.2,378.7c0,0-2.1,35,36.9,37.2c0,0,28.7-1.3,32.8-39.9"
-                />
-                <path
-                  class="st3"
-                  d="M368.7,450.8c-1.7-2.5-4.9-3-7.6-2.1c-0.2,0.1-0.3,0.1-0.5,0.2c0-0.6-0.1-1.1-0.3-1.6c-0.8-2.6-2.9-5-5.9-4.1
+		c12.9-10.3,39.6-29.6,45.9-105.2C100.6,91.7,182.9,25.8,287.2,48.6z" />
+            <g>
+              <path class="st1" d="M413.1,531.9H177.9c-7.4,0-13-11.2-11.1-22.7C179.1,432,232,373.9,295.5,373.9c63.5,0,116.4,58.1,128.7,135.3
+			C426.1,520.7,420.5,531.9,413.1,531.9z" />
+              <path class="st2" d="M253.2,378.7c0,0-2.1,35,36.9,37.2c0,0,28.7-1.3,32.8-39.9" />
+              <path class="st3" d="M368.7,450.8c-1.7-2.5-4.9-3-7.6-2.1c-0.2,0.1-0.3,0.1-0.5,0.2c0-0.6-0.1-1.1-0.3-1.6c-0.8-2.6-2.9-5-5.9-4.1
 			c-2.7,0.8-4.5,3.3-5,5.9c-0.5,2.6-0.1,5.3,0.6,7.8c0.7,2.6,1.6,5.2,2.8,7.6c0.4,0.8,1.1,1.5,2,1.5c0.8,0,1.5-0.4,2.1-0.7
-			c1.2-0.7,2.4-1.3,3.5-2.1c1.2-0.8,2.4-1.5,3.6-2.4c1.1-0.8,2.3-1.5,3.2-2.5C369.2,456.4,370.4,453.4,368.7,450.8z"
-                />
-              </g>
-              <path
-                class="st4"
-                d="M311.8,370c0.2,1.4,0.3,2.9,0.3,4.5c0,15.6-11.2,28.3-24.9,28.3s-24.9-12.7-24.9-28.3c0-1.2,0.1-2.3,0.2-3.5
+			c1.2-0.7,2.4-1.3,3.5-2.1c1.2-0.8,2.4-1.5,3.6-2.4c1.1-0.8,2.3-1.5,3.2-2.5C369.2,456.4,370.4,453.4,368.7,450.8z" />
+            </g>
+            <path class="st4" d="M311.8,370c0.2,1.4,0.3,2.9,0.3,4.5c0,15.6-11.2,28.3-24.9,28.3s-24.9-12.7-24.9-28.3c0-1.2,0.1-2.3,0.2-3.5
 		c-0.6,5.7-66.1-17.9-72.1-21.2c-72-40.6-89.6-138.7-48.5-207.4c13.3-22.2,32.1-41.1,54.5-54.1c25.9-15.1,55.8-22.9,85.8-22.9
-		c95.8,0,175.8,84.4,160.1,181.1C431.6,311.9,377.2,362,311.8,370z"
-              />
-              <path
-                class="st5"
-                d="M436.3,147.1c-55.7,5.8-98.3,8.4-138.2,9.1c-3.6-34.8-16.1-52.7-16.1-52.7c-28.7,33.2-15.4,31.1-32,52.7
-		c-89.2-1.6-128.6-13.2-128.6-13.2C133.7,83.3,217,62.5,217,62.5C387,11.3,436.3,147.1,436.3,147.1z"
-              />
-              <path
-                class="st5 front-hair"
-                d="M302.3,79c0,0-4.9,5.9-9.1,16.3c2.4-11.8,5.3-21.7,8.6-26.6c-3.1,1.2-8.6,6-13.8,14.1
+		c95.8,0,175.8,84.4,160.1,181.1C431.6,311.9,377.2,362,311.8,370z" />
+            <path class="st5" d="M436.3,147.1c-55.7,5.8-98.3,8.4-138.2,9.1c-3.6-34.8-16.1-52.7-16.1-52.7c-28.7,33.2-15.4,31.1-32,52.7
+		c-89.2-1.6-128.6-13.2-128.6-13.2C133.7,83.3,217,62.5,217,62.5C387,11.3,436.3,147.1,436.3,147.1z" />
+            <path class="st5 front-hair" d="M302.3,79c0,0-4.9,5.9-9.1,16.3c2.4-11.8,5.3-21.7,8.6-26.6c-3.1,1.2-8.6,6-13.8,14.1
 		c-0.1,0.1-0.3,0.2-0.4,0.3c0.7-1.2,1.4-2.3,2.1-3.2c0,0-2.3,2.1-5.4,6.1c-12.7,11.7-32,36.3-30.7,77.6c0,0,5.4-15.9,12.9-34.2
 		c-1.3,11.2-0.7,24.1,3.3,38.6c0,0,1.9-19.4,5.6-40.3c-0.3,13.3,1.8,28.7,7.9,46.1c0,0,1.5-20.3,4.4-43.4c0.7,9.8,3.2,20.7,8.7,32.4
-		C296.3,162.8,292.4,95.2,302.3,79z"
-              />
-              <path class="st6" d="M190.5,202c0,0,20.1-13.1,45.6-4.7" />
-              <path class="st7" d="M299.1,267.6c0,0-20.8,11.9-45.8,2.1" />
-              <path class="st6" d="M352.9,202.1c0,0-20.5-13.2-46.8-4.8" />
-              <g class="eye">
-                <g>
-                  <circle class="st8" cx="225.4" cy="223.5" r="12.7" />
-                  <circle class="st9" cx="231.7" cy="220.2" r="3.3" />
-                </g>
-                <g>
-                  <circle class="st8" cx="322.8" cy="222.5" r="12.7" />
-                  <circle class="st9" cx="316.6" cy="219.2" r="3.3" />
-                </g>
+		C296.3,162.8,292.4,95.2,302.3,79z" />
+            <path class="st6" d="M190.5,202c0,0,20.1-13.1,45.6-4.7" />
+            <path class="st7" d="M299.1,267.6c0,0-20.8,11.9-45.8,2.1" />
+            <path class="st6" d="M352.9,202.1c0,0-20.5-13.2-46.8-4.8" />
+            <g class="eye">
+              <g>
+                <circle class="st8" cx="225.4" cy="223.5" r="12.7" />
+                <circle class="st9" cx="231.7" cy="220.2" r="3.3" />
               </g>
-              <path
-                class="st10"
-                d="M397.4,259c1.6,22.2-36,17.1-47.9,11.1c-4.2-2.1-8-6.1-8-11.1c0-11.8,15.9-15.4,25-15.9
-		c10.6-0.6,29.4,1.9,30.8,15.3C397.4,258.6,397.4,258.8,397.4,259z"
-              />
-              <path
-                class="st10"
-                d="M218.7,264.7c0.1,1.1,0,2.3-0.2,3.5c-1,6.5-6.5,10.6-12.6,12.1c-11.8,3-27.2,0.5-37.4-6
-		c-2.2-1.4-4.2-3.4-5.1-5.9c-1.1-2.7-0.9-5.8,0.3-8.4c3.4-7.6,13.1-10,20.6-11C195.4,247.6,217.9,249.6,218.7,264.7z"
-              />
-              <path
-                class="st11"
-                d="M271.6,212.2c0,0,1.4,10.5-3.7,19.3s11.1,11,16.2,8.8"
-              />
+              <g>
+                <circle class="st8" cx="322.8" cy="222.5" r="12.7" />
+                <circle class="st9" cx="316.6" cy="219.2" r="3.3" />
+              </g>
             </g>
-          </svg>
+            <path class="st10" d="M397.4,259c1.6,22.2-36,17.1-47.9,11.1c-4.2-2.1-8-6.1-8-11.1c0-11.8,15.9-15.4,25-15.9
+		c10.6-0.6,29.4,1.9,30.8,15.3C397.4,258.6,397.4,258.8,397.4,259z" />
+            <path class="st10" d="M218.7,264.7c0.1,1.1,0,2.3-0.2,3.5c-1,6.5-6.5,10.6-12.6,12.1c-11.8,3-27.2,0.5-37.4-6
+		c-2.2-1.4-4.2-3.4-5.1-5.9c-1.1-2.7-0.9-5.8,0.3-8.4c3.4-7.6,13.1-10,20.6-11C195.4,247.6,217.9,249.6,218.7,264.7z" />
+            <path class="st11" d="M271.6,212.2c0,0,1.4,10.5-3.7,19.3s11.1,11,16.2,8.8" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <hr />
+
+  <section id="about" class="about">
+    <div class="inner">
+      <div class="about-content">
+        <h2 class="section-title">About me!</h2>
+        <div class="flex-wrap">
+          <div class="flex-item">
+            <dl class="about-hong">
+              <dt>Name</dt>
+              <dd>홍지수, Hong Ji-soo</dd>
+
+              <dt>license</dt>
+              <dd>
+                GTQ 1급, 2급(한국생산성본부) / 웹디자인 기능사
+                (한국산업인력공단)
+              </dd>
+
+              <dt>education</dt>
+              <dd>
+                <time datetime="2024-11">2024. 11</time> ~
+                <time datetime="2025-06">2025. 06</time>
+              </dd>
+              <dd>하이미디어아카데미 UX/UI 웹디자인 figma 교육 수료</dd>
+
+              <dt>skills</dt>
+              <dd>
+                <ul class="skill-list">
+                  <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
+                  <li>
+                    <img src="./img/Illustrator.svg" alt="Illustrator" />
+                  </li>
+                  <li><img src="./img/Figma.svg" alt="Figma" /></li>
+                  <li><img src="./img/HTML.svg" alt="HTML" /></li>
+                  <li><img src="./img/CSS.svg" alt="CSS" /></li>
+                  <li><img src="./img/JavaScript.svg" alt="JavaScript" /></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+
+          <div class="flex-item">
+            <dl class="about-hong">
+              <dt>experience</dt>
+              <dd>
+                <ul class="experience-list">
+                  <li>
+                    <time datetime="2024-11">2024. 11</time> ~
+                    <time datetime="2025-06">2025. 06</time>
+                    <h4>지앤건강생활</h4>
+                    <p>
+                      상세페이지 제작, 프로모션 디자인, 운영 디자인 가이드
+                      수립, 브랜드 아이덴티티 확립 제품 촬영 디렉팅, SNS콘텐츠
+                      디자인, 광고 퍼포먼스 디자인(메타/카카오/네이버)
+                    </p>
+                  </li>
+                  <li>
+                    <time datetime="2024-11">2024. 11</time> ~
+                    <time datetime="2025-06">2025. 06</time>
+                    <h4>이커머스 및 퍼포먼스 디자인 담당</h4>
+                    <p>
+                      신제품 및 리뉴얼 제품 상세페이지 기획 및 제작, 프로모션
+                      디자인: 시즌/월별 기획전 및 이벤트 배너 디자인, 매체별
+                      광고 소재 기획 및 제작 (A/B 테스트용 이미지/영상 포함)
+                    </p>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
         </div>
       </div>
-    </section>
-    <hr />
+    </div>
+  </section>
+  <hr />
 
-    <section id="about" class="about">
-      <div class="inner">
-        <div class="about-content">
-          <h2 class="section-title">About me!</h2>
-          <div class="flex-wrap">
-            <div class="flex-item">
-              <dl class="about-hong">
-                <dt>Name</dt>
-                <dd>홍지수, Hong Ji-soo</dd>
+  <!-- s: portfolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="inner">
+      <h2 class="section-title">portfolio</h2>
+      <!-- UI/UX -->
+      <article class="portfolio-item">
+        <div class="portfolio-item-title">
+          <div class="card-inner">
+            <h3 class="portfolio-title">UI/UX</h3>
+            <h4>비앙글로 클론 코딩</h4>
+            <p>
+              그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에 파란
+              잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼 풀이
+              무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에 계십니다.
+            </p>
+            <strong>2DAY</strong>
+            <ul class="skill-list">
+              <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
+              <li><img src="./img/Illustrator.svg" alt="Illustrator" /></li>
+              <li><img src="./img/Figma.svg" alt="Figma" /></li>
+              <li><img src="./img/HTML.svg" alt="HTML" /></li>
+              <li><img src="./img/CSS.svg" alt="CSS" /></li>
+              <li><img src="./img/JavaScript.svg" alt="JavaScript" /></li>
+            </ul>
+            <a href="#" class="view-btn">VIEW MORE</a>
+          </div>
+        </div>
+        <div class="portfolio-item-content">UI/UX 관련 작업 목업</div>
+      </article>
 
-                <dt>license</dt>
-                <dd>
-                  GTQ 1급, 2급(한국생산성본부) / 웹디자인 기능사
-                  (한국산업인력공단)
-                </dd>
+      <!-- WEB -->
+      <article class="portfolio-item">
+        <div class="portfolio-item-title">
+          <div class="card-inner">
+            <h3 class="portfolio-title">WEB</h3>
+            <h4>비앙글로 클론 코딩</h4>
+            <p>
+              그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에 파란
+              잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼 풀이
+              무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에 계십니다.
+            </p>
+            <strong>2DAY</strong>
+            <ul class="skill-list">
+              <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
+              <li><img src="./img/Illustrator.svg" alt="Illustrator" /></li>
+              <li><img src="./img/Figma.svg" alt="Figma" /></li>
+              <li><img src="./img/HTML.svg" alt="HTML" /></li>
+              <li><img src="./img/CSS.svg" alt="CSS" /></li>
+              <li><img src="./img/JavaScript.svg" alt="JavaScript" /></li>
+            </ul>
+            <a href="#" class="view-btn">VIEW MORE</a>
+          </div>
+        </div>
+        <div class="portfolio-item-content">WEB 관련 작업 목업</div>
+      </article>
 
-                <dt>education</dt>
-                <dd>
-                  <time datetime="2024-11">2024. 11</time> ~
-                  <time datetime="2025-06">2025. 06</time>
-                </dd>
-                <dd>하이미디어아카데미 UX/UI 웹디자인 figma 교육 수료</dd>
-
-                <dt>skills</dt>
-                <dd>
+      <!-- GRAPHIC -->
+      <article class="portfolio-item">
+        <div class="portfolio-item-title">
+          <div class="swiper text-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-inner">
+                  <h3 class="portfolio-title">GRAPHIC</h3>
+                  <h4>111 클론 코딩</h4>
+                  <p>
+                    그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
+                    파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
+                    풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
+                    계십니다.
+                  </p>
+                  <strong>2DAY</strong>
                   <ul class="skill-list">
                     <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
                     <li>
@@ -225,387 +314,204 @@
                     <li><img src="./img/Figma.svg" alt="Figma" /></li>
                     <li><img src="./img/HTML.svg" alt="HTML" /></li>
                     <li><img src="./img/CSS.svg" alt="CSS" /></li>
-                    <li><img src="./img/JavaScript.svg" alt="JavaScript" /></li>
-                  </ul>
-                </dd>
-              </dl>
-            </div>
-
-            <div class="flex-item">
-              <dl class="about-hong">
-                <dt>experience</dt>
-                <dd>
-                  <ul class="experience-list">
                     <li>
-                      <time datetime="2024-11">2024. 11</time> ~
-                      <time datetime="2025-06">2025. 06</time>
-                      <h4>지앤건강생활</h4>
-                      <p>
-                        상세페이지 제작, 프로모션 디자인, 운영 디자인 가이드
-                        수립, 브랜드 아이덴티티 확립 제품 촬영 디렉팅, SNS콘텐츠
-                        디자인, 광고 퍼포먼스 디자인(메타/카카오/네이버)
-                      </p>
-                    </li>
-                    <li>
-                      <time datetime="2024-11">2024. 11</time> ~
-                      <time datetime="2025-06">2025. 06</time>
-                      <h4>이커머스 및 퍼포먼스 디자인 담당</h4>
-                      <p>
-                        신제품 및 리뉴얼 제품 상세페이지 기획 및 제작, 프로모션
-                        디자인: 시즌/월별 기획전 및 이벤트 배너 디자인, 매체별
-                        광고 소재 기획 및 제작 (A/B 테스트용 이미지/영상 포함)
-                      </p>
+                      <img src="./img/JavaScript.svg" alt="JavaScript" />
                     </li>
                   </ul>
-                </dd>
-              </dl>
+                  <a href="#" class="view-btn">VIEW MORE</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-inner">
+                  <h3 class="portfolio-title">GRAPHIC</h3>
+                  <h4>222 클론 코딩</h4>
+                  <p>
+                    그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
+                    파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
+                    풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
+                    계십니다.
+                  </p>
+                  <strong>2DAY</strong>
+                  <ul class="skill-list">
+                    <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
+                    <li>
+                      <img src="./img/Illustrator.svg" alt="Illustrator" />
+                    </li>
+                    <li><img src="./img/Figma.svg" alt="Figma" /></li>
+                    <li>
+                      <img src="./img/JavaScript.svg" alt="JavaScript" />
+                    </li>
+                  </ul>
+                  <a href="#" class="view-btn">VIEW MORE</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-inner">
+                  <h3 class="portfolio-title">GRAPHIC</h3>
+                  <h4>333 클론 코딩</h4>
+                  <p>
+                    그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
+                    파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
+                    풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
+                    계십니다.
+                  </p>
+                  <strong>1DAY</strong>
+                  <ul class="skill-list">
+                    <li><img src="./img/Figma.svg" alt="Figma" /></li>
+                    <li><img src="./img/HTML.svg" alt="HTML" /></li>
+                    <li><img src="./img/CSS.svg" alt="CSS" /></li>
+                    <li>
+                      <img src="./img/JavaScript.svg" alt="JavaScript" />
+                    </li>
+                  </ul>
+                  <a href="#" class="view-btn">VIEW MORE</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <hr />
-
-    <!-- s: portfolio -->
-    <section id="portfolio" class="portfolio">
-      <div class="inner">
-        <h2 class="section-title">portfolio</h2>
-        <!-- UI/UX -->
-        <article class="portfolio-item">
-          <div class="portfolio-item-title">
-            <div class="card-inner">
-              <h3 class="portfolio-title">UI/UX</h3>
-              <h4>비앙글로 클론 코딩</h4>
-              <p>
-                그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에 파란
-                잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼 풀이
-                무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에 계십니다.
-              </p>
-              <strong>2DAY</strong>
-              <ul class="skill-list">
-                <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
-                <li><img src="./img/Illustrator.svg" alt="Illustrator" /></li>
-                <li><img src="./img/Figma.svg" alt="Figma" /></li>
-                <li><img src="./img/HTML.svg" alt="HTML" /></li>
-                <li><img src="./img/CSS.svg" alt="CSS" /></li>
-                <li><img src="./img/JavaScript.svg" alt="JavaScript" /></li>
-              </ul>
-              <a href="#" class="view-btn">VIEW MORE</a>
-            </div>
-          </div>
-          <div class="portfolio-item-content">UI/UX 관련 작업 목업</div>
-        </article>
-
-        <!-- WEB -->
-        <article class="portfolio-item">
-          <div class="portfolio-item-title">
-            <div class="card-inner">
-              <h3 class="portfolio-title">WEB</h3>
-              <h4>비앙글로 클론 코딩</h4>
-              <p>
-                그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에 파란
-                잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼 풀이
-                무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에 계십니다.
-              </p>
-              <strong>2DAY</strong>
-              <ul class="skill-list">
-                <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
-                <li><img src="./img/Illustrator.svg" alt="Illustrator" /></li>
-                <li><img src="./img/Figma.svg" alt="Figma" /></li>
-                <li><img src="./img/HTML.svg" alt="HTML" /></li>
-                <li><img src="./img/CSS.svg" alt="CSS" /></li>
-                <li><img src="./img/JavaScript.svg" alt="JavaScript" /></li>
-              </ul>
-              <a href="#" class="view-btn">VIEW MORE</a>
-            </div>
-          </div>
-          <div class="portfolio-item-content">WEB 관련 작업 목업</div>
-        </article>
-
-        <!-- GRAPHIC -->
-        <article class="portfolio-item">
-          <div class="portfolio-item-title">
-            <div class="swiper text-slider">
+        <div class="portfolio-item-content">
+          <!-- swiper -->
+          <div class="pic-slider-wrap">
+            <div class="swiper pic-slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card-inner">
-                    <h3 class="portfolio-title">GRAPHIC</h3>
-                    <h4>111 클론 코딩</h4>
-                    <p>
-                      그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
-                      파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
-                      풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
-                      계십니다.
-                    </p>
-                    <strong>2DAY</strong>
-                    <ul class="skill-list">
-                      <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
-                      <li>
-                        <img src="./img/Illustrator.svg" alt="Illustrator" />
-                      </li>
-                      <li><img src="./img/Figma.svg" alt="Figma" /></li>
-                      <li><img src="./img/HTML.svg" alt="HTML" /></li>
-                      <li><img src="./img/CSS.svg" alt="CSS" /></li>
-                      <li>
-                        <img src="./img/JavaScript.svg" alt="JavaScript" />
-                      </li>
-                    </ul>
-                    <a href="#" class="view-btn">VIEW MORE</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card-inner">
-                    <h3 class="portfolio-title">GRAPHIC</h3>
-                    <h4>222 클론 코딩</h4>
-                    <p>
-                      그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
-                      파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
-                      풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
-                      계십니다.
-                    </p>
-                    <strong>2DAY</strong>
-                    <ul class="skill-list">
-                      <li><img src="./img/Photoshop.svg" alt="Photoshop" /></li>
-                      <li>
-                        <img src="./img/Illustrator.svg" alt="Illustrator" />
-                      </li>
-                      <li><img src="./img/Figma.svg" alt="Figma" /></li>
-                      <li>
-                        <img src="./img/JavaScript.svg" alt="JavaScript" />
-                      </li>
-                    </ul>
-                    <a href="#" class="view-btn">VIEW MORE</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card-inner">
-                    <h3 class="portfolio-title">GRAPHIC</h3>
-                    <h4>333 클론 코딩</h4>
-                    <p>
-                      그러나, 겨울이 지나고 나의 별에도 봄이 오면, 무덤 위에
-                      파란 잔디가 피어나듯이 내 이름자 묻힌 언덕 위에도 자랑처럼
-                      풀이 무성할 거외다. 어머님, 그리고 당신은 멀리 북간도에
-                      계십니다.
-                    </p>
-                    <strong>1DAY</strong>
-                    <ul class="skill-list">
-                      <li><img src="./img/Figma.svg" alt="Figma" /></li>
-                      <li><img src="./img/HTML.svg" alt="HTML" /></li>
-                      <li><img src="./img/CSS.svg" alt="CSS" /></li>
-                      <li>
-                        <img src="./img/JavaScript.svg" alt="JavaScript" />
-                      </li>
-                    </ul>
-                    <a href="#" class="view-btn">VIEW MORE</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item-content">
-            <!-- swiper -->
-            <div class="pic-slider-wrap">
-              <div class="swiper pic-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img
-                      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                      alt="Unsplash Slide 1"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
-                      alt="Unsplash Slide 2"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
-                      alt="Unsplash Slide 3"
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <hr />
-    <!-- // e: portfolio -->
-
-    <section id="banner" class="banner">
-      <div class="inner">
-        <h2 class="section-title">banner</h2>
-        <!-- swiper -->
-        <div class="banner-slider-wrap">
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- Slider main container -->
-          <div class="swiper banner-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper pswp-gallery" id="my-gallery">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
                   <img
                     src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 1"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
+                    alt="Unsplash Slide 1" />
+                </div>
+                <div class="swiper-slide">
                   <img
                     src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 2"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
+                    alt="Unsplash Slide 2" />
+                </div>
+                <div class="swiper-slide">
                   <img
                     src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 3"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 4"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 5"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 6"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 7"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 8"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 9"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  href="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80"
-                  data-pswp-width="800"
-                  data-pswp-height="600"
-                  target="_blank"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80"
-                    alt="Unsplash Slide 10"
-                  />
-                </a>
+                    alt="Unsplash Slide 3" />
+                </div>
               </div>
             </div>
-
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </div>
-    </section>
-    <hr />
+      </article>
+    </div>
+  </section>
+  <hr />
+  <!-- // e: portfolio -->
 
-    <section id="contact" class="contact">
-      <div class="inner">
-        <div class="contact-content">
-          <h2 class="section-title">contact</h2>
-          <dl>
-            <dt>홍민석</dt>
-            <dd>yssmi@naver.com</dd>
-            <dd>010-1234-5678</dd>
-          </dl>
+  <section id="banner" class="banner">
+    <div class="inner">
+      <h2 class="section-title">banner</h2>
+      <!-- swiper -->
+      <div class="banner-slider-wrap">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Slider main container -->
+        <div class="swiper banner-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper pswp-gallery" id="my-gallery">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 1" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 2" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 3" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 4" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 5" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 6" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 7" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 8" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 9" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80"
+                data-pswp-width="800" data-pswp-height="600" target="_blank">
+                <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80"
+                  alt="Unsplash Slide 10" />
+              </a>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+  <hr />
+
+  <section id="contact" class="contact">
+    <div class="inner">
+      <div class="contact-content">
+        <h2 class="section-title">contact</h2>
+        <dl>
+          <dt>홍민석</dt>
+          <dd>yssmi@naver.com</dd>
+          <dd>010-1234-5678</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
