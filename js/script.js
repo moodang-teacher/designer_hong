@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	gsap.registerPlugin(ScrollTrigger, SplitText, ScrollToPlugin);
+	gsap.registerPlugin(ScrollTrigger, SplitText);
 
 	// ***************************
 	// Lenis.js
@@ -23,22 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	gsap.ticker.lagSmoothing(0);
-
-	// ***************************
-	// GNB 연결, scroll-behehavior 사용이 더 나아보임
-	// ***************************
-	// const sections = gsap.utils.toArray("section");
-	// const sectionIds = sections.map((section) => section.id);
-	// // console.log(sectionIds);
-
-	// const menus = gsap.utils.toArray(".gnb li a");
-
-	// menus.forEach((menu, index) => {
-	//   menu.addEventListener("click", (e) => {
-	//     e.preventDefault();
-	//     gsap.to(window, { scrollTo: "#" + sectionIds[index] });
-	//   });
-	// });
 
 	// ***************************
 	// GNB 연결, lenis.js의 scrollTo() 메서드 사용 👍
