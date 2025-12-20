@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 		// slidesPerView: "auto",
 		slidesPerView: '4.5',
-		spaceBetween: 28,
+		spaceBetween: 80,
 		centeredSlides: true,
 		// grabCursor: true,
 		speed: 1000,
